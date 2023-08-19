@@ -1,15 +1,11 @@
-package med.Vol.api.medicos;
+package med.Vol.api.dominio.medicos;
 
 import jakarta.persistence.*;
-import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.Vol.api.direccion.Direccion;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.PatchMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import med.Vol.api.dominio.direccion.Direccion;
 
 @Table(name = "medicos")    //con eso estoy diciendo que en el banco de datos hay una tabela llamada "medicos"
 @Entity(name = "Medico")
