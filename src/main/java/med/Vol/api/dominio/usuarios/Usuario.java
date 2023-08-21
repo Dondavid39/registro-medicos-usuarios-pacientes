@@ -24,7 +24,11 @@ public class Usuario implements UserDetails {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "acceso")
     private String login;
+
+    @Column(name = "contrasena") //manera de darle a entender wue la palabra "contraseña" significa que es el recurso password
     private String password;
 
     @Override

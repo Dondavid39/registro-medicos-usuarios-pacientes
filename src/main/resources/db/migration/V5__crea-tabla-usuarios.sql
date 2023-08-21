@@ -4,7 +4,5 @@ create table Usuarios(
     acceso varchar(100) not null,
     contrasena varchar(255) not null unique,
 
-
     primary key(id)
-
 );
