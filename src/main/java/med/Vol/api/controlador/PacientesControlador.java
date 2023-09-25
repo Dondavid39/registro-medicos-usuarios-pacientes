@@ -2,7 +2,9 @@ package med.Vol.api.controlador;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
+import med.Vol.api.dominio.direccion.Direccion;
 import med.Vol.api.dominio.pacientes.*;
+import med.Vol.api.dominio.usuarios.DatosRegistroUsuarios;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -49,4 +51,5 @@ public class PacientesControlador {
 
         return ResponseEntity.noContent().build();
     }
+
 }
